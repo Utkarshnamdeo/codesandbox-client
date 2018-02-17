@@ -1,4 +1,3 @@
-import { clone } from 'mobx-state-tree';
 import { getModulePath } from 'common/sandbox/modules';
 import getDefinition from 'common/templates';
 
@@ -127,15 +126,15 @@ export function moveDirectoryToDirectory({ state, props }) {
     directory => directory.id === props.directoryId
   );
   const currentDirectortyShortid = state.get(
-    `editor.sandboxes.${sandbox.id}.directories.${
-      directoryIndex
-    }.directoryShortid`
+    `editor.sandboxes.${
+      sandbox.id
+    }.directories.${directoryIndex}.directoryShortid`
   );
 
   state.set(
-    `editor.sandboxes.${sandbox.id}.directories.${
-      directoryIndex
-    }.directoryShortid`,
+    `editor.sandboxes.${
+      sandbox.id
+    }.directories.${directoryIndex}.directoryShortid`,
     props.directoryShortid
   );
 
@@ -149,9 +148,9 @@ export function revertMoveDirectoryToDirectory({ state, props }) {
   );
 
   state.set(
-    `editor.sandboxes.${sandbox.id}.directories.${
-      directoryIndex
-    }.directoryShortid`,
+    `editor.sandboxes.${
+      sandbox.id
+    }.directories.${directoryIndex}.directoryShortid`,
     props.currentDirectortyShortid
   );
 }
@@ -197,7 +196,7 @@ export function removeDirectory({ state, props }) {
   const directoryIndex = sandbox.directories.findIndex(
     directoryEntry => directoryEntry.shortid === props.moduleShortid
   );
-  const removedDirectory = clone(sandbox.directories[directoryIndex]);
+  const removedDirectory = sandbox.directories[directoryIndex];
 
   state.splice(`editor.sandboxes.${sandboxId}.directories`, directoryIndex, 1);
 
@@ -278,7 +277,7 @@ export function removeModule({ state, props }) {
   const moduleIndex = sandbox.modules.findIndex(
     moduleEntry => moduleEntry.shortid === props.moduleShortid
   );
-  const moduleCopy = clone(sandbox.modules[moduleIndex]);
+  const moduleCopy = sandbox.modules[moduleIndex];
 
   state.splice(`editor.sandboxes.${sandboxId}.modules`, moduleIndex, 1);
 
