@@ -30,20 +30,20 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@cerebral/fluent@^1.0.0-1518864840251":
-  version "1.0.0-1518864840251"
-  resolved "https://registry.yarnpkg.com/@cerebral/fluent/-/fluent-1.0.0-1518864840251.tgz#3f6a0871bfa4d3ba28d1654342b315f15d764b76"
+"@cerebral/fluent@^1.0.0-1518886037717":
+  version "1.0.0-1518886037718"
+  resolved "https://registry.yarnpkg.com/@cerebral/fluent/-/fluent-1.0.0-1518886037718.tgz#4db500c52b9a952073660b85295c9e0e609b809b"
   dependencies:
-    cerebral "^4.2.0-1518864840251"
+    cerebral "^4.2.0-1518886037718"
     mobx "^3.4.1"
 
-"@cerebral/http@^4.2.0-1518864840251":
-  version "4.2.0-1518864840251"
-  resolved "https://registry.yarnpkg.com/@cerebral/http/-/http-4.2.0-1518864840251.tgz#b2583191ae211afc6f169cb164d925ca7ec0d810"
+"@cerebral/http@^4.2.0-1518886037717":
+  version "4.2.0-1518886037718"
+  resolved "https://registry.yarnpkg.com/@cerebral/http/-/http-4.2.0-1518886037718.tgz#1feff5a80804f106fade97b94c2c844fb627227b"
 
-"@cerebral/mobx-state-tree@^3.2.0-1518864840251":
-  version "3.2.0-1518864840251"
-  resolved "https://registry.yarnpkg.com/@cerebral/mobx-state-tree/-/mobx-state-tree-3.2.0-1518864840251.tgz#0535cd581860daf69725bf20add0c760b44183c9"
+"@cerebral/mobx-state-tree@^3.2.0-1518886037717":
+  version "3.2.0-1518886037718"
+  resolved "https://registry.yarnpkg.com/@cerebral/mobx-state-tree/-/mobx-state-tree-3.2.0-1518886037718.tgz#c58c2286e8173b5ac39ee19e94bd23d582bb8548"
 
 "@emmetio/abbreviation@^0.6.0", "@emmetio/abbreviation@^0.6.1":
   version "0.6.4"
@@ -2751,12 +2751,12 @@ center-align@^0.1.1:
     align-text "^0.1.3"
     lazy-cache "^1.0.3"
 
-cerebral@^4.2.0-1518864840251:
-  version "4.2.0-1518864840251"
-  resolved "https://registry.yarnpkg.com/cerebral/-/cerebral-4.2.0-1518864840251.tgz#c9f4f558d2b3719614e312670e6f2c2d9ae16f62"
+cerebral@^4.2.0-1518886037717, cerebral@^4.2.0-1518886037718:
+  version "4.2.0-1518886037718"
+  resolved "https://registry.yarnpkg.com/cerebral/-/cerebral-4.2.0-1518886037718.tgz#b98728a231bdf2eaa383215f78da0f91f249a6a5"
   dependencies:
     es6-error "^4.0.2"
-    function-tree "^3.2.0-1518864840251"
+    function-tree "^3.2.0-1518886037718"
 
 chain-function@^1.0.0:
   version "1.0.0"
@@ -5899,9 +5899,9 @@ function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
-function-tree@^3.2.0-1518864840251:
-  version "3.2.0-1518864840251"
-  resolved "https://registry.yarnpkg.com/function-tree/-/function-tree-3.2.0-1518864840251.tgz#d15dd1171b1f8e2d19208f8e9852269985bf9370"
+function-tree@^3.2.0-1518886037717, function-tree@^3.2.0-1518886037718:
+  version "3.2.0-1518886037718"
+  resolved "https://registry.yarnpkg.com/function-tree/-/function-tree-3.2.0-1518886037718.tgz#ef818a437aeb1e5c6b84b9b5d11e2590d445f0cd"
   dependencies:
     "@types/eventemitter3" "^1.2.0"
     chalk "^1.1.3"
